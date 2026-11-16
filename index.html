@@ -202,13 +202,17 @@ table.shell-table tbody tr:hover { background: color-mix(in srgb, var(--accent) 
 .w-full { width: 100%; }
 .text-success { color: var(--success); } .text-danger { color: var(--danger); } .text-warning { color: var(--warning); }
 
-/* Components, with basecoat 1.0 markup (variants and sizes are data
-   attributes) and the shell tokens, so a page needs neither component CSS
-   nor a CSS framework. An older page that also links basecoat gets these
-   rules after it, over the same properties. */
-button, input, select, textarea { font: inherit; }
-input[type="checkbox"], input[type="radio"] { accent-color: var(--accent); }
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+ position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    /* Imagem de fundo com sobreposição azul marinho */
+    background: linear-gradient(rgba(28, 40, 58, 0.85), rgba(28, 40, 58, 0.85)), 
+                url('https://generated-images.adapta.one/alexandremarciniak92%40gmail.com/01a1c087-0052-75bd-9e70-e409edcb74c7/2026-11-16T04-11-19-606Z_Original_user_intent_Cinematic_wide_shot_of_a_maj.png');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+    transition: padding .3s ease, box-shadow .3s ease;
+    border-bottom: 2px solid var(--gold);
 
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 6px;
