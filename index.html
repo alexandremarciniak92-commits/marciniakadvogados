@@ -1304,11 +1304,11 @@ min-width: 0;
 }
 
 /* Hero */
-hero {
+.hero {
     position: relative;
-    /* Imagem do tribunal com película azul marinho */
-    background-image: linear-gradient(rgba(28, 40, 58, 0.8), rgba(28, 40, 58, 0.8)), 
-                      url('https://github.com/user-attachments/assets/4a28c264-3e73-4d4c-8b1f-da390305ae87');
+   /* Imagem do tribunal com película azul marinho (90% de opacidade) */
+    background: linear-gradient(rgba(28, 40, 58, 0.9), rgba(28, 40, 58, 0.9)), 
+                url('https://github.com/user-attachments/assets/4a28c264-3e73-4d4c-8b1f-da390305ae87');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -1482,7 +1482,7 @@ body::before { content: ''; position: fixed; inset: 0; background: rgba(28,40,58
 .site-header, main, .site-footer { position: relative; z-index: 1; }
 main > section, .site-footer { background-color: transparent !important; background-image: none !important; }
 main > section::before { content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none; }
-#equipe::before, #informacoes::before, #contato::before { background: rgba(28,40,58,0.9); }
+#inicio::before, #equipe::before, #informacoes::before, #contato::before { background: rgba(28,40,58,0.9); }
 #areas::before, #escritorio::before, #faq::before { background: rgba(242,239,233,0.94); }
 section.block > .container, .hero > .hero-inner, main > section > .container { z-index: 1; }
 #areas, #informacoes, #faq, #contato { background-color: transparent !important; }
